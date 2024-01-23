@@ -5,18 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Document</title>
+  <title>HOCKEY'S</title>
 
-  <!-- Tailwind and DaisyUI CDN links -->
+  <!-- ------------------- Tailwind and DaisyUI CDN links -------------------- -->
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
+  <!-- ---------------------------- Google Fonts ----------------------------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap"
     rel="stylesheet" />
+
+    <!-- -------------------------- Font awesome link -------------------------- -->
+    <script src="https://kit.fontawesome.com/4240968479.js" crossorigin="anonymous"></script>
+
 
   <!-- Style section -->
   <style>
@@ -48,11 +52,17 @@
     li:hover {
       color: #FF4240;
     }
+
+    .parent div{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- --------------------------- Header Section ---------------------------- -->
   <header class=" area-mobile md:area mt-[40px]">
 
     <nav class="flex justify-between items-center pr-4">
@@ -89,7 +99,7 @@
     </nav>
 
 
-    <!-- Banner Section -->
+    <!-- --------------------------- Banner Section ---------------------------- -->
     <div class="mt-[60px] relative">
 
       <!-- Slider  1 -->
@@ -134,12 +144,13 @@
         <p class="text-sm font-light lg:font-medium text-gray-400">Dit amet consectestur. Condimentum dignissim
           adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
       </div>
+      </div>
   </header>
 
   <!-- Main Section -->
   <main>
 
-    <!-- Section 1 -->
+    <!-- ------------------------------ Section 1 ------------------------------ -->
     <section class="mt-[100px] area-mobile">
 
       <!-- Section heading -->
@@ -205,7 +216,7 @@
     </section>
 
 
-    <!-- Section 2 -->
+    <!-- ------------------------------ Section 2 ------------------------------ -->
     <section class="mt-[100px] area-mobile overflow-hidden">
       <!-- Section heading -->
       <div class="text-center manrope mx-auto px-250px py-[35px] border-b-2 border-dashed border-b-gray-300 mb-[30px]">
@@ -258,6 +269,315 @@
           <img src="./Images/Program section/4.png" class="w-full h-[222px] lg:h-full">
         </div>
       </div>
+    </section>
+
+
+    <!-- ------------------------------ Section 3 ------------------------------ -->
+    <section class="mt-[100px] area-mobile overflow-hidden">
+
+            <!-- Section heading -->
+            <div class="text-center manrope mx-auto px-250px py-[35px] border-b-2 border-dashed border-b-gray-300 border-t-2 border-t-gray-300 mb-[70px]">
+
+              <h1 class="w-[100%] font-extrabold text-4xl text-[#131318] mb-[20px]">Our New Products</h1>
+              <p class="font-medium text-gray-600">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. <br> Purus urna in sit nullam proin.</p>
+            </div>
+
+
+            <!-- Section body -->
+            <div class="grid lg:grid-cols-2 gap-6 manrope">
+
+              <!-- Grid 1 -->
+              <div class="border-2 border-gray-200 rounded-2xl p-5 flex lg:flex-row flex-col gap-4">
+                <!-- Product Image -->
+                <div class="grid items-center scale-110">
+                  <img src="./Images/Product section/5.png">
+                </div>
+
+                <!-- Product Details -->
+                <div class="flex flex-col justify-center gap-3">
+
+                  <!-- Ratings View React -->
+                  <div class="parent flex gap-4">
+                    <!-- Rating -->
+                    <div>
+                      <i class="fa-solid fa-star" style="color: #f99c1a;"></i>
+                      <h5 class="text-gray-400 font-[500]">5.0</h5>
+                    </div>
+                    <!-- View -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-eye"></i>
+                      <h5>25</h5>
+                    </div>
+                    <!-- React -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-heart"></i>
+                      <h5>193</h5>
+                    </div>
+
+                  </div>
+
+                  <!-- Name & Description -->
+                  <div>
+                    <h1 class="text-[#131318] text-[20px] font-extrabold mb-1">Classic Red Jacket</h1>
+                    <p class="text-gray-400 font-[500]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <!-- Price & Delivery -->
+                  <div class="flex gap-4">
+                    <h1 class="font-extrabold text-[#FF4240] text-[18px]">Price - $24.95</h1>
+                    <div class="flex items-center gap-1">
+                      <i class="fa-solid fa-truck text-gray-500"></i>
+                      <p class="text-gray-400 font-[500]">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Grid 2 -->
+              <div class="border-2 border-gray-200 rounded-2xl p-5 flex lg:flex-row flex-col gap-4">
+                <!-- Product Image -->
+                <div class="grid items-center scale-110">
+                  <img src="./Images/Product section/5.png">
+                </div>
+
+                <!-- Product Details -->
+                <div class="flex flex-col justify-center gap-3">
+
+                  <!-- Ratings View React -->
+                  <div class="parent flex gap-4">
+                    <!-- Rating -->
+                    <div>
+                      <i class="fa-solid fa-star" style="color: #f99c1a;"></i>
+                      <h5 class="text-gray-400 font-[500]">5.0</h5>
+                    </div>
+                    <!-- View -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-eye"></i>
+                      <h5>25</h5>
+                    </div>
+                    <!-- React -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-heart"></i>
+                      <h5>193</h5>
+                    </div>
+
+                  </div>
+
+                  <!-- Name & Description -->
+                  <div>
+                    <h1 class="text-[#131318] text-[20px] font-extrabold mb-1">Classic Red Jacket</h1>
+                    <p class="text-gray-400 font-[500]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <!-- Price & Delivery -->
+                  <div class="flex gap-4">
+                    <h1 class="font-extrabold text-[#FF4240] text-[18px]">Price - $24.95</h1>
+                    <div class="flex items-center gap-1">
+                      <i class="fa-solid fa-truck text-gray-500"></i>
+                      <p class="text-gray-400 font-[500]">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Grid 3 -->
+              <div class="border-2 border-gray-200 rounded-2xl p-5 flex lg:flex-row flex-col gap-4">
+                <!-- Product Image -->
+                <div class="grid items-center scale-110">
+                  <img src="./Images/Product section/5.png">
+                </div>
+
+                <!-- Product Details -->
+                <div class="flex flex-col justify-center gap-3">
+
+                  <!-- Ratings View React -->
+                  <div class="parent flex gap-4">
+                    <!-- Rating -->
+                    <div>
+                      <i class="fa-solid fa-star" style="color: #f99c1a;"></i>
+                      <h5 class="text-gray-400 font-[500]">5.0</h5>
+                    </div>
+                    <!-- View -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-eye"></i>
+                      <h5>25</h5>
+                    </div>
+                    <!-- React -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-heart"></i>
+                      <h5>193</h5>
+                    </div>
+
+                  </div>
+
+                  <!-- Name & Description -->
+                  <div>
+                    <h1 class="text-[#131318] text-[20px] font-extrabold mb-1">Classic Red Jacket</h1>
+                    <p class="text-gray-400 font-[500]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <!-- Price & Delivery -->
+                  <div class="flex gap-4">
+                    <h1 class="font-extrabold text-[#FF4240] text-[18px]">Price - $24.95</h1>
+                    <div class="flex items-center gap-1">
+                      <i class="fa-solid fa-truck text-gray-500"></i>
+                      <p class="text-gray-400 font-[500]">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Grid 4 -->
+              <div class="border-2 border-gray-200 rounded-2xl p-5 flex lg:flex-row flex-col gap-4">
+                <!-- Product Image -->
+                <div class="grid items-center scale-110">
+                  <img src="./Images/Product section/5.png">
+                </div>
+
+                <!-- Product Details -->
+                <div class="flex flex-col justify-center gap-3">
+
+                  <!-- Ratings View React -->
+                  <div class="parent flex gap-4">
+                    <!-- Rating -->
+                    <div>
+                      <i class="fa-solid fa-star" style="color: #f99c1a;"></i>
+                      <h5 class="text-gray-400 font-[500]">5.0</h5>
+                    </div>
+                    <!-- View -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-eye"></i>
+                      <h5>25</h5>
+                    </div>
+                    <!-- React -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-heart"></i>
+                      <h5>193</h5>
+                    </div>
+
+                  </div>
+
+                  <!-- Name & Description -->
+                  <div>
+                    <h1 class="text-[#131318] text-[20px] font-extrabold mb-1">Classic Red Jacket</h1>
+                    <p class="text-gray-400 font-[500]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <!-- Price & Delivery -->
+                  <div class="flex gap-4">
+                    <h1 class="font-extrabold text-[#FF4240] text-[18px]">Price - $24.95</h1>
+                    <div class="flex items-center gap-1">
+                      <i class="fa-solid fa-truck text-gray-500"></i>
+                      <p class="text-gray-400 font-[500]">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Grid 5 -->
+              <div class="border-2 border-gray-200 rounded-2xl p-5 flex lg:flex-row flex-col gap-4">
+                <!-- Product Image -->
+                <div class="grid items-center scale-110">
+                  <img src="./Images/Product section/5.png">
+                </div>
+
+                <!-- Product Details -->
+                <div class="flex flex-col justify-center gap-3">
+
+                  <!-- Ratings View React -->
+                  <div class="parent flex gap-4">
+                    <!-- Rating -->
+                    <div>
+                      <i class="fa-solid fa-star" style="color: #f99c1a;"></i>
+                      <h5 class="text-gray-400 font-[500]">5.0</h5>
+                    </div>
+                    <!-- View -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-eye"></i>
+                      <h5>25</h5>
+                    </div>
+                    <!-- React -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-heart"></i>
+                      <h5>193</h5>
+                    </div>
+
+                  </div>
+
+                  <!-- Name & Description -->
+                  <div>
+                    <h1 class="text-[#131318] text-[20px] font-extrabold mb-1">Classic Red Jacket</h1>
+                    <p class="text-gray-400 font-[500]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <!-- Price & Delivery -->
+                  <div class="flex gap-4">
+                    <h1 class="font-extrabold text-[#FF4240] text-[18px]">Price - $24.95</h1>
+                    <div class="flex items-center gap-1">
+                      <i class="fa-solid fa-truck text-gray-500"></i>
+                      <p class="text-gray-400 font-[500]">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Grid 6 -->
+              <div class="border-2 border-gray-200 rounded-2xl p-5 flex lg:flex-row flex-col gap-4">
+                <!-- Product Image -->
+                <div class="grid items-center scale-110">
+                  <img src="./Images/Product section/5.png">
+                </div>
+
+                <!-- Product Details -->
+                <div class="flex flex-col justify-center gap-3">
+
+                  <!-- Ratings View React -->
+                  <div class="parent flex gap-4">
+                    <!-- Rating -->
+                    <div>
+                      <i class="fa-solid fa-star" style="color: #f99c1a;"></i>
+                      <h5 class="text-gray-400 font-[500]">5.0</h5>
+                    </div>
+                    <!-- View -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-eye"></i>
+                      <h5>25</h5>
+                    </div>
+                    <!-- React -->
+                    <div class="text-gray-400 font-[500]">
+                      <i class="fa-regular fa-heart"></i>
+                      <h5>193</h5>
+                    </div>
+
+                  </div>
+
+                  <!-- Name & Description -->
+                  <div>
+                    <h1 class="text-[#131318] text-[20px] font-extrabold mb-1">Classic Red Jacket</h1>
+                    <p class="text-gray-400 font-[500]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <!-- Price & Delivery -->
+                  <div class="flex gap-4">
+                    <h1 class="font-extrabold text-[#FF4240] text-[18px]">Price - $24.95</h1>
+                    <div class="flex items-center gap-1">
+                      <i class="fa-solid fa-truck text-gray-500"></i>
+                      <p class="text-gray-400 font-[500]">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
     </section>
   </main>
 
