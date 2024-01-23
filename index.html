@@ -1,20 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
 
     <!-- Tailwind and DaisyUI CDN links -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
 
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap" rel="stylesheet"/>
 
-</body>
+    <!-- Style section -->
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+      .btn-primary{
+        color: #FFF;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 8px;
+        background: #FF4240;
+      }
+      .area{
+        width: 85%;
+        margin: 0 auto;
+      }
+      .area-mobile{
+        width: 90%;
+        margin: 0 auto;
+      }
 
+      li:hover{
+        color:#FF4240;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class=" area-mobile md:area mt-[40px]">
+
+        <nav class="flex justify-between items-center pr-4">
+           
+          <!-- Left side -->  
+              <!-- Imported -->
+              <div class="dropdown flex items-center">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+              <!-- End -->
+                <h1 class="text-2xl font-extrabold text-[##131318] manrope">Hockey<span class="text-[#FF4240]">'</span>s</h1>
+            </div>
+
+
+            <!-- Middle side -->
+            <div>
+              <ul class="flex gap-[20px] hidden md:hidden lg:inline-flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+
+
+            <!-- Right side -->
+            <div>
+              <button class="btn bg-[#FF4240] text-white px-8 text-lg">Get Ticket</button>
+            </div>
+        </nav>
+
+
+        <!-- Banner Section -->
+        <div class="mt-[60px] relative">
+
+          <!-- Slider  1 -->
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/Slider/1.png" class="w-full" />
+              <div class="absolute transform -translate-y-1/2 left-5 right-5 top-1/2 flex justify-between lg:justify-start lg:gap-4 lg:left-12 lg:top-[90%]">
+                <a href="#slide3" class="btn btn-circle bg-[#131318] text-white border-none scale-75 lg:scale-100">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none scale-75 lg:scale-100">❯</a>
+              </div>
+            </div> 
+
+            <!-- Slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full rounded-2xl">
+              <img src="./Images/Slider/2(Cropped).png" class="w-full rounded-2xl" />
+              <div class="absolute transform -translate-y-1/2 left-5 right-5 top-1/2 flex justify-between lg:justify-start lg:gap-4 lg:left-12 lg:top-[90%]">
+                <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none scale-75 lg:scale-100">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-[#131318] text-white border-none scale-75 lg:scale-100">❯</a>
+              </div>
+            </div> 
+
+            <!-- Slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full rounded-2xl">
+              <img src="./Images/Slider/3(Cropped).png" class="w-full rounded-2xl" />
+              <div class="absolute transform -translate-y-1/2 left-5 right-5 top-1/2 flex justify-between lg:justify-start lg:gap-4 lg:left-12 lg:top-[90%]">
+                <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none scale-75 lg:scale-100">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none scale-75 lg:scale-100">❯</a>
+              </div>
+            </div> 
+
+
+        </div>
+
+        <div class="bg-[#131318] text-white p-[15px] lg:p-[25px] lg:w-[50%] font-bold rounded-2xl lg:absolute lg:bottom-7 lg:right-7 manrope">
+
+          <h1 class="lg:text-xl mb-3">Meet all the heroes from the field</h1>
+
+          <p class="text-sm font-light lg:font-medium text-gray-400">Dit amet consectestur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+
+
+
+
+
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Section 1 -->
+    </main>
+
+
+
+    <footer></footer>
+  </body>
 </html>
